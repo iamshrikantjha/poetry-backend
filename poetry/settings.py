@@ -14,7 +14,7 @@ SECRET_KEY = '8#78+uh^ya6+g75numjipouh_o95c^nm5scol!5$p3%3lqgow*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.103']
+ALLOWED_HOSTS = ['iampoetry.herokuapp.com','192.168.0.103']
 
 
 # Application definition
@@ -120,8 +120,6 @@ REST_FRAMEWORK = {
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 import dj_database_url
 db_from_env = dj_database_url.config()
